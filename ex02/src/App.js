@@ -10,9 +10,9 @@ class App extends Component {
 
   getMyStorage = () => {
     const myCookieData = document.cookie.match(new RegExp("(^| )Year=([^;]+)"))[2];
-    const myLocalStorageDate = localStorage.getItem("Paragon");
+    const myLocalStorageData = localStorage.getItem("Paragon");
     const mySessionStorageData = sessionStorage.getItem("frontend");
-    console.log(myCookieData, myLocalStorageDate, mySessionStorageData);
+    console.log(myCookieData, myLocalStorageData, mySessionStorageData);
     return [myCookieData, myLocalStorageData, mySessionStorageData];
   };
 
